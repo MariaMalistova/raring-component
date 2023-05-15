@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Overpass;
+    src: url(./font/Overpass-VariableFont_wght.ttf);
+}
+body {
+    background-color: hsl(228, 11%, 9%);
+    height: calc(100vh - 2rem);
+    font-family: Overpass;
+    font-size: 15px;
+}
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sr-only {
+  display: none;
+}
+.card {
+    width: 340px;
+    height: 340px;
+    background-color: hsl(216, 29%, 13%);
+    border-radius: 30px;
+    display: flex;
+    padding: 35px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.thank-you-component {
+    display: none;
+    align-items: center;
+}
+.bold-title {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 1.8em;
+}
+.card-info {
+    color: hsl(217, 12%, 63%);
+    line-height: 1.8;
+}
+.circle {
+    background-color: hsl(213, 19%, 18%);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(217, 12%, 63%);
+}
+.rates {
+    display: flex;
+    justify-content: space-between;
+}
+.submit {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .2rem;
+}
+.rate:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.clicked {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+}
+.selection {
+    background-color: hsl(213, 19%, 18%);
+    width: 170px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(25, 97%, 53%);
+    font-weight: 300;
+    font-size: 0.9em;
+}
+.info-result {
+    text-align: center;
+}
+footer {
+    color: hsl(0, 0%, 100%);
+}
+@media (max-width:375px)  {
+    body {
+        font-size: 13px;
+    }
+    .card {
+        width: 90%;
+        height: auto;
+        gap: 15px;
+        border-radius: 15px;
+        padding: 20px;
+    }
+    .circle {
+        width: 44px;
+        height: 44px;
+        border-radius: 22px;
+    }
+    .thank-you-pic > img {
+        height: 90px;
+    }
+}
